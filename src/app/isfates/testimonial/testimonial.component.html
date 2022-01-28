@@ -1,0 +1,42 @@
+<!-- Carousel wrapper -->
+<div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center mt-5 mb-5"
+  data-mdb-ride="carousel"
+>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" *ngFor="let testimonial of testimonials">
+            <img
+              class="rounded-circle shadow-1-strong mb-4"
+              src="{{testimonial.imageURL}}"
+              alt="avatar"
+              style="width: 150px;"
+            />
+            <h5 class="mb-3">{{testimonial.name}}</h5>
+            <p>{{testimonial.status}}</p>
+            <p class="text-muted">
+              <i class="bi bi-quote"></i>
+              {{testimonial.testimony}}
+              <i class="bi bi-quote"></i>
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="bi bi-star bi-sm"></i></li>
+              <li><i class="bi bi-star bi-sm"></i></li>
+              <li><i class="bi bi-star bi-sm"></i></li>
+              <li><i class="bi bi-star bi-sm"></i></li>
+              <li><i class="bi bi-star bi-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Inner -->
+</div>
+<!-- Carousel wrapper -->

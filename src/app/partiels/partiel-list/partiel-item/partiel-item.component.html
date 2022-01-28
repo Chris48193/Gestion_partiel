@@ -1,0 +1,32 @@
+<!-- <a style="cursor: pointer;" class="list-group-item clearfix" >
+  <div class="float-left">
+    <h4 class="list-group-item-heading">{{ partiel.matiere }}</h4>
+    <p class="list-group-item-text">{{ partiel.description | slice:0:28 }}...</p>
+  </div>
+  <span class="float-right">
+    <img [src]="partiel.imageURL" alt="{{ partiel.matiere }}" class="img-responsive" style="max-height:60px" />
+  </span>
+</a> -->
+
+
+
+<div class="accordion-item">
+  <h2 class="accordion-header" [id]="'heading' + id">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + id" aria-expanded="true" aria-controls="collapseOne">
+      <strong>{{ partiel.matiere }}</strong>
+    </button>
+  </h2>
+  <div [id]="'collapse' + id" class="accordion-collapse collapse" [ngClass]="{'show': id==0}" data-bs-parent="#partielsAccordeon">
+    <div class="accordion-body">
+      <h3>{{ partiel.matiere }}</h3>
+      <span class="float-right">
+        <img [src]="partiel.imageURL" alt="{{ partiel.matiere }}" class="img-responsive" style="max-height:60px" />
+      </span><br>
+      <div class="mt-3 clearfix">
+        <strong>Date de l'examen: </strong>{{ partiel.date_evaluation }}<br>
+        <strong>Description: </strong>{{ partiel.description }}<br>
+        <button class="btn btn-danger mt-2 float-end" (click)="deletePartiel(id)">Supprimer</button>
+      </div>
+    </div>
+  </div>
+</div>

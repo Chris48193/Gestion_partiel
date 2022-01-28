@@ -1,0 +1,65 @@
+.card {
+  border: none;
+}
+.logo-list {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.logo-list img {
+  display: inline-block;
+  max-width: 85%;
+  padding: 15px 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-filter: grayscale(100);
+  -moz-filter: grayscale(100);
+  filter: grayscale(100);
+}
+.logo-list img:hover {
+  filter: none;
+  transform: scale(1.2);
+  -webkit-filter: none;
+  -moz-filter: none;
+}
+
+
+@media (max-width: 320px)  {
+  h1{
+    font-size:1rem;
+    font-weight: bolder;
+  }
+
+ .card-title {
+    font-size:1rem;
+   font-weight: normal;
+  }
+ .size-small{
+   font-size: 0.7rem;
+ }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  h1 {
+    font-size:1.5rem;
+  }
+  .size-small{
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 376px) and ( max-width: 425px) {
+  h1 {
+    font-size:1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
