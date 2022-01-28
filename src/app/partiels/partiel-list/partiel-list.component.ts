@@ -32,7 +32,7 @@ export class PartielListComponent implements OnInit {
   }
 
   onAddPartiel() {
-    if(this.matiere.trim() == "" || this.description.trim() == "" || this.date.trim() == "" || this.imageURL.trim() == "") {
+    if(this.matiere == "" || this.description == "" || this.date == "" || this.imageURL == "") {
       this.error = "Veillez remplir tout les champs s'il vous plaît";
     } else {
       this.partielService.addPartiel(new Partiel(this.matiere, this.description, this.date, this.imageURL));
