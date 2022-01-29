@@ -11,6 +11,7 @@ import { PartielItemComponent } from './partiels/partiel-list/partiel-item/parti
 import { FormsModule } from '@angular/forms';
 import { IsfatesModule } from './isfates/isfates.module';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     PartielsComponent,
     PartielListComponent,
     PartielItemComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     IsfatesModule,
